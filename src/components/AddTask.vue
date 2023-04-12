@@ -44,7 +44,6 @@
                 }
 
                 const newTask = {
-                    id: Math.floor(Math.random() * 10000),
                     text: this.text,
                     day: this.day,
                     reminder: this.reminder
@@ -66,7 +65,12 @@
 <style scoped>
     .add-form {
         margin-bottom: 40px;
+        display: none;
     }
+    .add-form.show{
+        display: block;
+    }
+
     .form-control {
         margin: 20px 0;
     }

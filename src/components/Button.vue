@@ -10,9 +10,7 @@
     export default{
         name: 'Button',
         props: {
-            text: {
-                default: 'Add Task'
-            },
+            text: String,
             color:{
                 type: String,
                 default: 'green'
@@ -20,7 +18,7 @@
         },
         methods:{
             onClick(){
-                console.log('click');
+                this.$emit('btn-click')
             }
         }
     }
